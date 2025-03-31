@@ -1,0 +1,7 @@
+{
+    "name": "rpm-page",
+    "version": "0.0.1",
+    "dependencies": {
+        "serialport": "^9.0.1"
+    }
+}
