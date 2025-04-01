@@ -15,7 +15,7 @@ var port = new SerialPort('COM6',{
 port.pipe(parser);
 let i = 0;
 setTimeout(function(){
-    while (i < 10000){
+    while (i < 1000){
         port.write("2000");
         i++;
     }
