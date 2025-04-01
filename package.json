@@ -2,6 +2,7 @@
     "name": "rpm-page",
     "version": "0.0.1",
     "dependencies": {
-        "serialport": "^9.0.1"
+        "@serialport/parser-readline": "^13.0.0",
+        "serialport": "^9.0.3"
     }
 }
