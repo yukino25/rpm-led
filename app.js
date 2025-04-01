@@ -1,5 +1,7 @@
 var SerialPort = require('serialport');
-var { ReadlineParser } = require('@serialport/parser-readline')
+var { ReadlineParser } = require('@serialport/parser-readline');
+
+
 const parser = new ReadlineParser({
     delimiter: '\r\n'
 });
