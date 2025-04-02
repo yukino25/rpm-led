@@ -1,5 +1,7 @@
 var SerialPort = require('serialport');
-var { ReadlineParser } = require('@serialport/parser-readline')
+var { ReadlineParser } = require('@serialport/parser-readline');
+
+
 const parser = new ReadlineParser({
     delimiter: '\r\n'
 });
@@ -15,7 +17,7 @@ var port = new SerialPort('COM6',{
 port.pipe(parser);
 let i = 0;
 setTimeout(function(){
-    while (i < 10000){
+    while (i < 1000){
         port.write("2000");
         i++;
     }
